@@ -2,6 +2,7 @@ import React from "react";
 import TabNav from "./components/TabNav.js";
 import Header from "./components/Header.js";
 import WelcomePage from "./components/WelcomePage"
+import CharacterList from "./components/CharacterList"
 // import AppRouter from "./components/AppRouter.js";
 
 export default function App() {
@@ -9,6 +10,7 @@ export default function App() {
     <main>
       <Header />
       <WelcomePage />
+      <CharacterList />
       {/* <TabNav /> */}
       {/* <AppRouter /> */}
     </main>
