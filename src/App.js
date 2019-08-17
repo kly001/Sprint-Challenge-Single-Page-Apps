@@ -3,6 +3,7 @@ import TabNav from "./components/TabNav.js";
 import Header from "./components/Header.js";
 import WelcomePage from "./components/WelcomePage"
 import CharacterList from "./components/CharacterList"
+import LocationsList from "./components/LocationsList"
 // import AppRouter from "./components/AppRouter.js";
 
 export default function App() {
@@ -11,6 +12,7 @@ export default function App() {
       <Header />
       <WelcomePage />
       <CharacterList />
+      <LocationsList />
       {/* <TabNav /> */}
       {/* <AppRouter /> */}
     </main>

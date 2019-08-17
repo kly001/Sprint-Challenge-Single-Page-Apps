@@ -37,3 +37,12 @@ main {
 header h1 {
   text-align: center;
 }
+
+.characterInfo {
+  border:3px solid magenta;
+  margin: 20px;
+}
+.locationInfo {
+  border:3px dashed blue;
+  margin: 20px;
+}

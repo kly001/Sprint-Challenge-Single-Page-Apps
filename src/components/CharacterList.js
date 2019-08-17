@@ -31,8 +31,9 @@ export default function CharacterList() {
          name={character.name}
          species={character.species}
          status={character.status}
-      />
+      />   
   ))}
+ 
     </section>
   );
 }
