@@ -40,13 +40,13 @@ header h1 {
 
 .characterInfo {
   border:3px solid magenta;
-  margin: 20px;
+  margin: 10px;
 }
 .locationInfo {
   border:3px dashed blue;
-  margin: 20px;
+  margin: 10px;
 }
 .episodeInfo {
   border:3px dotted green;
-  margin: 20px;
+  margin: 10px;
 }
