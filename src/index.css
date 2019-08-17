@@ -46,3 +46,7 @@ header h1 {
   border:3px dashed blue;
   margin: 20px;
 }
+.episodeInfo {
+  border:3px dotted green;
+  margin: 20px;
+}
