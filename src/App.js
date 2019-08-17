@@ -16,6 +16,11 @@ export default function App() {
       <CharacterList />
       <LocationsList />
       <EpisodesList />
+      {/* <Route exact path= "/" component={WelcomePage}/>
+      <Route  path= "/characterList" component={CharacterList}/>
+      <Route  path= "/locationsList" component={LocationsList}/>
+      <Route  path= "/episodesList" component={EpisodesList}/>
+      */}
        {/* <TabNav /> 
       <AppRouter />  */}
 
