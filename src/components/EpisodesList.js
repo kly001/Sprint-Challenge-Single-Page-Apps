@@ -24,6 +24,7 @@ export default function EpisodesList() {
                 key={episodes.id}
                 name={episode.name}
                 airDate={episode.air_date}
+                episode={episode.episode}
              />
           ))}
 

@@ -6,9 +6,8 @@ export default function LocationCard(props) {
 
 <div className="locationInfo">
       <h3>{props.name}</h3>
-      <p>{props.type}</p>
-      <p>{props.dimension}</p>
-      <p>{props.residents}</p>
+      <p>Type: {props.type}</p>
+      <p>Dimension: {props.dimension}</p>
     </div>
   </span>;
 }

@@ -18,6 +18,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .page-view {
@@ -27,26 +28,45 @@ main {
 .grid-view div.card.ui {
   margin: 1.25rem;
 }
-/*
+
 .main-img {
   display: block;
   border-radius: 100%;
   margin: 0 auto;
-} */
+}
 
 header h1 {
   text-align: center;
 }
 
 .characterInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border:3px solid magenta;
   margin: 10px;
+  width: 200px;
+  height: 300px;
 }
 .locationInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border:3px dashed blue;
   margin: 10px;
+  width: 200px;
+  height: 200px;
 }
 .episodeInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border:3px dotted green;
   margin: 10px;
+  width: 200px;
+  height: 200px;
+}
+.character-img {
+  width:150px;
+  height:150px;
 }

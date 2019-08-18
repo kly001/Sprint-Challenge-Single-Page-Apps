@@ -3,10 +3,14 @@ import React from "react";
 export default function CharacterCard(props) {
   return <span>
     <div className ="characterInfo">
-      {/* <img src={props.image} alt="character pic"/> */}
-      <h2>{props.name}</h2>
-      <p>{props.status}</p>
-      <p>{props.species}</p>
+    <img className="character-img"
+                src={"https://rickandmortyapi.com/api/character/"}
+                alt={props.name}
+            />
+      <h3>{props.name}</h3>
+      <p>Status: {props.status}</p>
+      <p>Species: {props.species}</p>
+      <p>Gender: {props.gender}</p>
     </div>
   </span>;
 }
