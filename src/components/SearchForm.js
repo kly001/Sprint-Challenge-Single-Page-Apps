@@ -16,7 +16,7 @@ export default function SearchForm({ onSearch }) {
       <form onSubmit={() => onSearch(search.name)}>
         <input
           onChange={handleInputChange}
-          placeholder="name"
+          placeholder="Name"
           value={search.name}
           name="name"
         />

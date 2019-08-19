@@ -13,12 +13,13 @@ export default function App() {
   return (
     <main>
       <Header />
+      <SearchForm />
       <TabNav />
       <Route exact path= "/" component={WelcomePage}/>
       <Route  path= "/characterList" component={CharacterList}/>
       <Route  path= "/locationsList" component={LocationsList}/>
       <Route  path= "/episodesList" component={EpisodesList}/>
-      <SearchForm />
+    
     </main>
   );
 }
