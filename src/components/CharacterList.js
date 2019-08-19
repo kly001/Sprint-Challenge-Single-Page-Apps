@@ -3,7 +3,6 @@ import axios from "axios";
 import CharacterCard from "./CharacterCard";
 
 
-
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
   const [characters, setCharacters] = useState([])
@@ -27,7 +26,7 @@ export default function CharacterList() {
        <CharacterCard
          character={character}
          key={character.id}
-         img = {character.img}
+         image = {character.image}
          name={character.name}
          species={character.species}
          status={character.status}

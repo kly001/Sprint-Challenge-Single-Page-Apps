@@ -3,8 +3,8 @@ import React from "react";
 export default function CharacterCard(props) {
   return <span>
     <div className ="characterInfo">
-    <img className="character-img"
-                src={"https://rickandmortyapi.com/api/character/"}
+      <img className="character-img"
+                src={props.image}
                 alt={props.name}
             />
       <h3>{props.name}</h3>

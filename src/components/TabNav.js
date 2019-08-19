@@ -8,27 +8,27 @@
 // };
 
 import React from 'react';
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 const TabNav = () => {
   return (
-    <div>
+    
       <div className="App">
       
         <div>
-         <Link to = "/">WelcomePage</Link>
+         <NavLink to = "/">WelcomePage</NavLink>
         </div>
         <div>
-         <Link to = "/characterList">Characters</Link>
+         <NavLink to = "/characterList">Characters</NavLink>
         </div>
         <div>
-          <Link to= "/episodesList">Episodes</Link>
+          <NavLink to= "/episodesList">Episodes</NavLink>
         </div>
         <div>
-          <Link to= "/locationsList">Locations</Link>
+          <NavLink to= "/locationsList">Locations</NavLink>
         </div>
       </div>
-    </div>
+    
   );
 };
 
