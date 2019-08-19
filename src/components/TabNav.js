@@ -1,42 +1,3 @@
-// import React from "react";
-// import { Tab, Menu, Icon } from "semantic-ui-react";
-// import { NavLink } from "react-router-dom";
-
-// // TODO: Add missing tabs below
-// export default function TabNav() {
- 
-// };
-
-// import React from 'react';
-// import {NavLink} from "react-router-dom";
-
-// const TabNav = () => {
-//   return (
-    
-//       <div className="App">
-      
-//         <div>
-//          <NavLink to = "/">WelcomePage</NavLink>
-//         </div>
-//         <div>
-//          <NavLink to = "/characterList">Characters</NavLink>
-//         </div>
-//         <div>
-//           <NavLink to= "/episodesList">Episodes</NavLink>
-//         </div>
-//         <div>
-//           <NavLink to= "/locationsList">Locations</NavLink>
-//         </div>
-//       </div>
-    
-//   );
-// };
-
-// export default TabNav;
-
-
-
-//CODE FROM DOCUMENTATION
 import React from 'react'
 import { Tab, Menu, Icon } from 'semantic-ui-react'
 import { NavLink } from "react-router-dom";
@@ -48,8 +9,8 @@ const Nav = props => (
 const createLabel = (iconName, labelText) => <span><Icon name={iconName} />{labelText}</span>
 const welcomeLabel = createLabel("home", "Home Page")
 const characterLabel = createLabel("users", "Characters")
-const locationLabel = createLabel("map", "Locations")
-const episodesLabel = createLabel("play", "Episodes")
+const locationLabel = createLabel("map outline", "Locations")
+const episodesLabel = createLabel("video", "Episodes")
 
  const panes = [
   { menuItem: <Menu.Item key='home' as={Nav} to={`/`} content={welcomeLabel} /> },

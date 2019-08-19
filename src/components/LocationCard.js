@@ -5,9 +5,11 @@ export default function LocationCard(props) {
   return <span>
 
 <div className="locationInfo">
-      <h3>{props.name}</h3>
-      <p>Type: {props.type}</p>
-      <p>Dimension: {props.dimension}</p>
+      <h2>{props.name}</h2>
+      <p><strong>TYPE:</strong></p>
+      <p>{props.type}</p>
+      <p><strong>DIMENSION:</strong></p>
+      <p>{props.dimension}</p>
     </div>
   </span>;
 }

@@ -7,10 +7,10 @@ export default function CharacterCard(props) {
                 src={props.image}
                 alt={props.name}
             />
-      <h3>{props.name}</h3>
-      <p>Status: {props.status}</p>
-      <p>Species: {props.species}</p>
-      <p>Gender: {props.gender}</p>
+      <h2>{props.name}</h2>
+      <p><strong>STATUS:</strong> {props.status}</p>
+      <p><strong>SPECIES:</strong> {props.species}</p>
+      <p><strong>GENDER:</strong>{props.gender}</p>
     </div>
   </span>;
 }

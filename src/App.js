@@ -14,17 +14,11 @@ export default function App() {
     <main>
       <Header />
       <TabNav />
-      <SearchForm />
-
       <Route exact path= "/" component={WelcomePage}/>
       <Route  path= "/characterList" component={CharacterList}/>
       <Route  path= "/locationsList" component={LocationsList}/>
       <Route  path= "/episodesList" component={EpisodesList}/>
-     
-       {/*
-      <AppRouter />  */}
-
-  
+      <SearchForm />
     </main>
   );
 }
