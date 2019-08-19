@@ -7,46 +7,57 @@
  
 // };
 
-import React from 'react';
-import {NavLink} from "react-router-dom";
+// import React from 'react';
+// import {NavLink} from "react-router-dom";
 
-const TabNav = () => {
-  return (
+// const TabNav = () => {
+//   return (
     
-      <div className="App">
+//       <div className="App">
       
-        <div>
-         <NavLink to = "/">WelcomePage</NavLink>
-        </div>
-        <div>
-         <NavLink to = "/characterList">Characters</NavLink>
-        </div>
-        <div>
-          <NavLink to= "/episodesList">Episodes</NavLink>
-        </div>
-        <div>
-          <NavLink to= "/locationsList">Locations</NavLink>
-        </div>
-      </div>
+//         <div>
+//          <NavLink to = "/">WelcomePage</NavLink>
+//         </div>
+//         <div>
+//          <NavLink to = "/characterList">Characters</NavLink>
+//         </div>
+//         <div>
+//           <NavLink to= "/episodesList">Episodes</NavLink>
+//         </div>
+//         <div>
+//           <NavLink to= "/locationsList">Locations</NavLink>
+//         </div>
+//       </div>
     
-  );
-};
+//   );
+// };
 
-export default TabNav;
+// export default TabNav;
 
 
 
 //CODE FROM DOCUMENTATION
-// import React from 'react'
-// import { Tab } from 'semantic-ui-react'
+import React from 'react'
+import { Tab, Menu, Icon } from 'semantic-ui-react'
+import { NavLink } from "react-router-dom";
 
-// const panes = [
-//   { menuItem: 'welcome-page', render: () => <Tab.Pane>Welcome Page</Tab.Pane> },
-//   { menuItem: 'characterInfo', render: () => <Tab.Pane>Characters</Tab.Pane> },
-//   { menuItem: 'episodesInfo', render: () => <Tab.Pane>Episodes</Tab.Pane> },
-//   { menuItem: 'locationsInfo', render: () => <Tab.Pane>Locations</Tab.Pane> },
-// ]
+const Nav = props => (
+  <NavLink exact {...props} activeClassName="active"/>
+)
 
-// const TabExampleBasic = () => <Tab panes={panes} />
+const createLabel = (iconName, labelText) => <span><Icon name={iconName} />{labelText}</span>
+const welcomeLabel = createLabel("home", "Home Page")
+const characterLabel = createLabel("users", "Characters")
+const locationLabel = createLabel("map", "Locations")
+const episodesLabel = createLabel("play", "Episodes")
 
-// export default TabExampleBasic
+ const panes = [
+  { menuItem: <Menu.Item key='home' as={Nav} to={`/`} content={welcomeLabel} /> },
+  { menuItem: <Menu.Item key='characters' as={Nav} to={`/characterList`} content={characterLabel} /> },
+  { menuItem: <Menu.Item key='locations' as={Nav} to={`/locationsList`} content={locationLabel} /> },
+  { menuItem: <Menu.Item key='episodes' as={Nav} to={`/episodesList`} content={episodesLabel} /> }
+ ]
+
+ const TabNav = () => <Tab panes={panes} renderActiveOnly={false} />
+
+export default TabNav

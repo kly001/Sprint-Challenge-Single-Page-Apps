@@ -15,10 +15,6 @@ export default function App() {
       <Header />
       <TabNav />
       <SearchForm />
-      {/* <WelcomePage />
-      <CharacterList />
-      <LocationsList />
-      <EpisodesList /> */}
 
       <Route exact path= "/" component={WelcomePage}/>
       <Route  path= "/characterList" component={CharacterList}/>
